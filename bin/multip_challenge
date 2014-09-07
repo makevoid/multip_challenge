@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby -wU
+
+path = File.expand_path "../../", __FILE__
+
+require "#{path}/lib/multip_challenge"
+
+primes = ARGV[0]
+
+multip = primes ? MultipChallenge.new(primes.to_i) : MultipChallenge.new
+
+puts multip.table
