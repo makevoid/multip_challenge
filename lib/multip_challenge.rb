@@ -6,7 +6,6 @@ class MultipChallenge
   end
   
   def table
-    puts @primes.inspect
     # TODO: implement
   end
 end
